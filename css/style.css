@@ -1,0 +1,113 @@
+@import url(components/normalize.css);
+@import url(components/form.css);
+@import url(components/typography.css);
+@import url(components/common.css);
+@import url(components/icomoon.css);
+
+.form-block {
+  max-width: 380px;
+  margin: 0 auto;
+  padding: 38px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.form-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+  background: url("../images/form-bg.jpg") no-repeat 50% 50%;
+}
+
+hr {
+  margin-bottom: 25px;
+  border: solid #e0e9f0;
+  border-width: 0 0 1px;
+}
+
+.form-block h1 {
+  font-size: 28px;
+  color: #282b2f;
+}
+
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-control:focus {
+  border-color: none;
+}
+
+.label {
+  padding: 15px;
+  cursor: pointer;
+}
+
+textarea {
+  height: 140px;
+  resize: none;
+  width: 100%;
+  border: none;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #009688;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #04776c;
+}
+
+.form-check {
+  margin-bottom: 16px;
+}
+
+.radio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.radio {
+  padding-left: 15px;
+}
+
+.radio-list .label {
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+.check-row {
+  padding: 10px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox__text {
+  padding-left: 15px;
+}
+
+.social-networks {
+  display: inline-flex;
+  width: 100%;
+  padding: 15px;
+}
+
+li {
+  padding: 20px;
+  list-style-type: none;
+}
